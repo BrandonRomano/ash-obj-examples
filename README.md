@@ -1,6 +1,6 @@
 # Ash-Obj-Examples
 
-Ash-Obj-Examples is an [Ash](https://github.com/BrandonRomano/ash) module used to illustrate usage of [Ash-Obj](https://github.com/BrandonRomano/ash-obj), which is another ash module that adds object support to Bash.
+Ash-Obj-Examples is an [Ash](https://github.com/BrandonRomano/ash) module used to illustrate usage of [Ash-Obj](https://github.com/BrandonRomano/ash-obj), which an ash core module that adds object support to Bash.
 
 # Getting started
 
