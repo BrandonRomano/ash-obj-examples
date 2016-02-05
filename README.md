@@ -8,8 +8,8 @@ You're going to have to install [Ash](https://github.com/ash-shell/ash) to use t
 
 After you have Ash installed, run either one of these two commands depending on your git clone preference:
 
-- `ash self:install git@github.com:BrandonRomano/ash-obj-examples.git`
-- `ash self:install https://github.com/BrandonRomano/ash-obj-examples.git`
+- `ash apm:install git@github.com:BrandonRomano/ash-obj-examples.git`
+- `ash apm:install https://github.com/BrandonRomano/ash-obj-examples.git`
 
 You can optionally add `--global` to the end of these commands to install them globally.
 
