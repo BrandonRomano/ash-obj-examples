@@ -1,31 +1,29 @@
 About:
 
-    This is a module to illustrate usage for Ash Obj, and is for example
+    This is a module to illustrate usage for Obj, and is for example
     purposes only.  You should be digging into the source code of this
-    module after running to get a better understanding of how Ash Obj
-    works.
+    module after running to get a better understanding of how Obj works.
 
-    You can find Ash Obj at https://github.com/BrandonRomano/ash-obj,
-    although Ash Obj is part of the ash core, so no setup will be
-    required.
+    Obj is part of the ash core, so no setup will be required.  You can
+    find Obj at https://github.com/ash-shell/obj.
 
 Usage:
 
-    obj-examples:allocinit
+    obj_ex:allocinit
         This example illustrates creating new objects with `Obj__alloc`
         and `Obj__init`
 
-    obj-examples:get
+    obj_ex:get
         This example illustrates fetching object public members using
         `Obj__get`
 
-    obj-examples:set
+    obj_ex:set
         This example illustrates setting object public members using
         `Obj__set`
 
-    obj-examples:method
+    obj_ex:method
         This example illustrates calling a method on an Object
 
-    obj-examples:function
+    obj_ex:function
         This example illustrates that you can use objects in normal bash
         constructs, like functions.

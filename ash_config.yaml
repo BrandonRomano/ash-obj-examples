@@ -1,2 +1,4 @@
 name: Obj Examples
+package: github.com/BrandonRomano/ash-obj-examples
+default_alias: obj_ex
 callable_prefix: Objexamples
