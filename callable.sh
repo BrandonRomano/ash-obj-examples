@@ -14,12 +14,12 @@ Objexamples__callable_help(){
 ################################################################
 Objexamples__callable_allocinit(){
     # Creating first object
-    brandon=$(Obj__alloc "Person")
+    brandon=$(Obj__alloc "this.Person")
     Obj__init $brandon 1 "Brandon" 23
     Obj__dump $brandon
 
     # Creating another object
-    kyle=$(Obj__alloc "Person")
+    kyle=$(Obj__alloc "this.Person")
     Obj__init $kyle 2 "Kyle" 30
     Obj__dump $kyle
 }
@@ -29,7 +29,7 @@ Objexamples__callable_allocinit(){
 # members using `Obj__get`
 ################################################################
 Objexamples__callable_get(){
-    local brandon=$(Obj__alloc "Person")
+    local brandon=$(Obj__alloc "this.Person")
     Obj__init $brandon 1 "Brandon" 23
     name=$(Obj__get $brandon name)
     id=$(Obj__get $brandon id)
@@ -43,7 +43,7 @@ Objexamples__callable_get(){
 ################################################################
 Objexamples__callable_set(){
     # Creating Object
-    local brandon=$(Obj__alloc "Person")
+    local brandon=$(Obj__alloc "this.Person")
     Obj__init $brandon 1 "Brandon" 23
     Logger__warning "User before Obj__set is called:"
     Obj__dump $brandon
@@ -59,7 +59,7 @@ Objexamples__callable_set(){
 ################################################################
 Objexamples__callable_method(){
     # Initializing object
-    local brandon=$(Obj__alloc "Person")
+    local brandon=$(Obj__alloc "this.Person")
     Obj__init $brandon 1 "Brandon" 23
     Logger__warning "User before method is called:"
     Obj__dump $brandon
@@ -71,13 +71,12 @@ Objexamples__callable_method(){
     Obj__dump $brandon
 }
 
-
 ################################################################
 # This example illustrates that you can use objects
 # in normal bash constructs, like functions.
 ################################################################
 Objexamples__callable_function(){
-    local brandon=$(Obj__alloc "Person")
+    local brandon=$(Obj__alloc "this.Person")
     Obj__init $brandon 1 "Brandon" 23
     Objexamples_pretty_print_person $brandon
 }
